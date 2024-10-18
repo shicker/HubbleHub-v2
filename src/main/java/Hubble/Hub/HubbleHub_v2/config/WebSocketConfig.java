@@ -1,6 +1,9 @@
 package Hubble.Hub.HubbleHub_v2.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lombok.NonNull;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.converter.DefaultContentTypeResolver;
 import org.springframework.messaging.converter.MappingJackson2MessageConverter;
@@ -15,6 +18,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebSocketMessageBroker
+@NonNull
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
